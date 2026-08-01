@@ -1,47 +1,99 @@
-h1 {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.navbar ul {
-  list-style-type: none;
-  background-color: #B7410E;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#FFF8DC,#FFE4B5,#FFDAB9);
+    color:#5A3E2B;
+    text-align:center;
+    line-height:1.7;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;            
-  display: block;
-  text-align: center;
+.navbar{
+    position:sticky;
+    top:0;
+    background:#FF914D;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    z-index:1000;
 }
 
-.navbar a:hover {
-  background-color: red;
+.navbar ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
 }
 
-.navbar li{
-	float: left;
-}
-verflow: hidden;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;            
-  display: block;
-  text-align: center;
+.navbar a{
+    display:block;
+    padding:18px 25px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.navbar a:hover {
-  background-color: red;
+.navbar a:hover{
+    background:#FFB347;
+    color:#5A3E2B;
 }
 
-.navbar li{
-	float: left;
+h1{
+    color:#E85D04;
+    margin:30px 20px;
+    text-shadow:2px 2px 4px rgba(255,255,255,.5);
+}
+
+p{
+    background:white;
+    width:90%;
+    max-width:900px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    font-size:22px !important;
+}
+
+img{
+    width:90%;
+    max-width:960px;
+    height:auto;
+    display:block;
+    margin:25px auto;
+    border-radius:25px;
+    border:6px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+img:hover{
+    transform:scale(1.03) rotate(1deg);
+}
+
+hr{
+    width:80%;
+    margin:40px auto;
+    border:3px dashed #FF914D;
+}
+
+a{
+    color:#FF6B35;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#E85D04;
+}
+
+footer{
+    margin-top:50px;
+    padding:25px;
+    background:#FF914D;
+    color:white;
+    font-weight:bold;
 }
